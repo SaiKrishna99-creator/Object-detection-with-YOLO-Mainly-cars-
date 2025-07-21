@@ -27,12 +27,59 @@ Enable our platform to seamlessly track vehicles as they move through areas cove
 <ul>
   <li>
     <b>Import Libraries</b><br>
-    ```
-import cv2
-from ultralytics import YOLO
-from deep_sort_realtime.deepsort_tracker import DeepSort
-```
-
+  </li>
+  <li>
+    <b>Configuration Settings</b>
+  </li>
+  <li>
+    <b>Load YOLOv8</b>
+  </li>
+  <li>
+    <b>Initialize DeepSORT Tracker</b>
+  </li>
+  <li>
+    <b>Load the Input Video</b>
+  </li>
+  <li>
+    <b>Setup Output Writer</b>
+  </li>
+  <li>
+    <b>Main Loop: Frame-by-Frame Processing</b>
+  </li>
+  <li>
+    <b> Run YOLO Detection on Frame</b>
+  </li>
+  <li>
+    <b>Filter Detections for Cars Only</b>
+  </li>
+  <li>
+    <b>
+      Pass to DeepSORT Tracker
+    </b>
+  </li>
+  <li>
+    <b>Draw Tracks on Frame</b>
+  </li>
+  <li>
+    <b>Save the Frame</b>
+  </li>
+  <li>
+    <b>Cleanup</b>
   </li>
 </ul>
+<br><br>
+
+<h3>CHALLENGES FACED DURING THE CODE</h3><br><br>
+<ol>
+  <li> 
+    <b>COMPUTATIONAL AND ENVIRONMENT/PLATFORM LIMITATIONS: </b> I lack GPU in my system which is a huge blocker for my output efficiency. As a result, I could not process more videos or even a video more than 1 minute properly. Also I tried using Google colab in GPU T4 mode. Yet, it had its own limitations in terms of some of the functionalities or compatibilities. 
+  </li>
+  <li>
+    <b>SCARCE AVAILABILITY OF RELEVANT DATASET/VIDEO: </b> For any model, good data for a model is like good food for our body. Here I am in need of videos containing cars or objects captured from multiple cams. But when I searched online for datasets, 99% of the videos are of cars moving which captured from a single camera which are not suitable for my model.
+  </li>
+</ol>
+<br><br>
+
+
+
  
